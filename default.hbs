@@ -23,25 +23,9 @@
 </head>
 <body class="{{body_class}}">
     <div id="fb-root"></div>
-    <header id="global-header" class="global-header navbar">
-       <nav role="navigation">
-           <div class="wrapper">
-               <a class="ghost-logo" href="http://ebookchain.org/"><span>Ebookchain</span></a>
-               <button type="button" class="mobile-menu" data-toggle="closed" data-target=".nav-collapse">
-               <span class="hidden">Menu</span>
-               </button>
-               <ul id="main-menu" class="nav-collapse closed">
-                    <li><a href="/">主页</a></li>
-                    <li><a href="http://blog.ebookchian.org">博客</a></li>
-                    <li><a href="http://forum.ebookchian.org">论坛</a></li>
-                    <li>
-                        <a title="Sign in to manage your Ebookchain dapps" class="btn btn-default navbar-btn" href="http://bbs.ebookchain.com">登录</a>
-                    </li>
-               </ul>
-           </div>
-        </nav>
-    </header>
-    
+
+    {{> header }}
+
     <main class="blog-wrapper" role="main">
         <header class="blog-header">
             <nav class="blog-nav">
