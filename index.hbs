@@ -9,15 +9,15 @@
             <header class="post-header">
                 <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
                 <section class="post-meta">
-                    <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
+                    <img class="author-img" src="{{author.image}}" alt="作者头像" nopin="nopin" />
                     <span class="author-name">{{author}}</span>
                     &bull;
-                    <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="D MMM YYYY"}}</time>
-                    <span class="tags">{{tags prefix="• Subject: "}}</span>
+                    <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY年MM月DD日"}}</time>
+                    <span class="tags">{{tags prefix="• 标签: "}}</span>
                 </section>
             </header>
             <section class="post-excerpt">
-                <p>{{excerpt words="55"}}&hellip; <a class="read-more" href="{{url}}">Read More</a></p>
+                <p>{{excerpt words="55"}}&hellip; <a class="read-more" href="{{url}}">阅读更多</a></p>
             </section>
         </article>
 

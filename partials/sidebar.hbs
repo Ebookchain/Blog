@@ -9,22 +9,22 @@
             <li>Meetings: Tuesdays, 17:30 UTC</li>
         </ul>
     </section> --}}
-
+    {{#if posts}}
     <section class="popular-posts widget">
         <h3>当前 <mark>最受关注</mark> 的文章</h3>
         {{!
             Yep this is static. Soz. You were probably hoping for something fancy.
         }}
         <ol>
-        {{#foreach posts}}
+        {{#foreach posts limit=5}}
           <li class="{{post_class}}">
             <a href="{{url}}">
-              <span class="number" aria-hidden="true">1</span>
+              <span class="number" aria-hidden="true">{{@number}}</span>
               {{{title}}}
             </a>
           </li>
         {{/foreach}}
         </ol>
     </section>
-
+    {{/if}}
 </aside>

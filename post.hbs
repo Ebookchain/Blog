@@ -13,26 +13,26 @@
             </div>
             {{/if}}{{/if}}
 
-            <a class="post-meta back-link" href="{{@blog.url}}">&larr; Back to the front page</a>
+            <a class="post-meta back-link" href="{{@blog.url}}">&larr; 返回</a>
 
             <h1 class="post-title">{{{title}}}</h1>
             <section class="post-meta">
-                <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
+                <img class="author-img" src="{{author.image}}" alt="作者图片" nopin="nopin" />
                 <span class="author-name">{{author}}</span>
-                on the
-                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do of MMMM YYYY"}}</time>
-                <span class="tags">{{tags prefix="in "}}</span>
+                于
+                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY年MM月DD日发布 "}}</time>
+                <span class="tags">{{tags prefix="类别: "}}</span>
             </section>
 
             <section class="post-content">
-                {{#if image}}{{#unless featured}}<img src="{{image}}" alt="Post image" />{{/unless}}{{/if}}
+                {{#if image}}{{#unless featured}}<img src="{{image}}" alt="文章图片" />{{/unless}}{{/if}}
                 {{content}}
             </section>
 
             <footer class="post-footer">
 
                 <section class="author">
-                    <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
+                    <img class="author-img" src="{{author.image}}" alt="作者图片" nopin="nopin" />
                     <div class="author-meta">
                         <h4>{{author.name}}</h4>
                         <p>{{{author.bio}}} <a href="{{author.website}}">{{author.website}}</a></p>
@@ -50,7 +50,7 @@
                     {{/next_post}}
                 </section>
 
-                <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Subscribe to Weekly Posts</a>
+                <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">订阅周报</a>
 
             </footer>
 
